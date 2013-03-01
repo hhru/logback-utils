@@ -2,17 +2,29 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
+  <parent>
+    <groupId>ru.hh.public-pom</groupId>
+    <artifactId>public-pom</artifactId>
+    <version>1.26</version>
+  </parent>
+  
   <groupId>ru.hh.logback</groupId>
   <artifactId>logback-utils</artifactId>
   <version>1.0-SNAPSHOT</version>
   <name>Logback appenders etc</name>
 
   <dependencies>
-          <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-classic</artifactId>
-            <version>1.0.9</version>
-          </dependency>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>1.0.9</version>
+    </dependency>
   </dependencies>
 
+  <scm>
+    <connection>scm:git:git@github.com:hhru/logback-utils.git</connection>
+    <developerConnection>scm:git:git@github.com:hhru/logback-utils.git</developerConnection>
+    <url>https://github.com/hhru/logback-utils.git</url>
+  </scm>
+  
 </project>
