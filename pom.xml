@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
@@ -7,7 +8,7 @@
     <artifactId>public-pom</artifactId>
     <version>1.26</version>
   </parent>
-  
+
   <groupId>ru.hh.logback</groupId>
   <artifactId>logback-utils</artifactId>
   <version>1.2-SNAPSHOT</version>
@@ -18,6 +19,27 @@
       <groupId>ch.qos.logback</groupId>
       <artifactId>logback-classic</artifactId>
       <version>1.0.9</version>
+    </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-log4j12</artifactId>
+      <version>1.7.2</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.7.2</version>
+      <scope>test</scope>
     </dependency>
   </dependencies>
 
@@ -38,10 +60,22 @@
     </plugins>
   </build>
 
+  <repositories>
+    <repository>
+      <id>hh-public</id>
+      <name>hh public releases repository</name>
+      <url>http://m2.hh.ru/content/repositories/public-releases</url>
+    </repository>
+    <repository>
+      <id>dev-java-net-m2</id>
+      <url>http://download.java.net/maven/2</url>
+    </repository>
+  </repositories>
+
   <scm>
     <connection>scm:git:git@github.com:hhru/logback-utils.git</connection>
     <developerConnection>scm:git:git@github.com:hhru/logback-utils.git</developerConnection>
     <url>https://github.com/hhru/logback-utils.git</url>
   </scm>
-  
+
 </project>
