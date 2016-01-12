@@ -10,7 +10,7 @@
 
   <groupId>ru.hh.logback</groupId>
   <artifactId>logback-utils</artifactId>
-  <version>1.3-SNAPSHOT</version>
+  <version>1.3</version>
   <name>Logback appenders etc</name>
 
   <dependencies>
@@ -107,6 +107,7 @@
     <connection>scm:git:git@github.com:hhru/logback-utils.git</connection>
     <developerConnection>scm:git:git@github.com:hhru/logback-utils.git</developerConnection>
     <url>https://github.com/hhru/logback-utils.git</url>
+    <tag>logback-utils-1.3</tag>
   </scm>
 
 </project>
