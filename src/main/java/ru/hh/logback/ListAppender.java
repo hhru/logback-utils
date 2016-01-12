@@ -6,16 +6,15 @@ public class ListAppender extends ch.qos.logback.core.read.ListAppender<ILogging
 
   public String getLogLineBySubstring(String substring) {
     String actualLogString = null;
-
-    for (ILoggingEvent event : list) {
-      final String m = event.getFormattedMessage();
-      if (m.contains(substring)) {
-        actualLogString = m;
-        break;
+    synchronized (this) {
+      for (ILoggingEvent event : list) {
+        final String m = event.getFormattedMessage();
+        if (m.contains(substring)) {
+          actualLogString = m;
+          break;
+        }
       }
     }
     return actualLogString;
   }
-
 }
-

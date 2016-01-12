@@ -6,7 +6,7 @@ bin/
 .directory
 .metadata
 
-target/
+target
 build/
 dist/
 nbproject/private/
@@ -15,6 +15,7 @@ tmp/
 seq/
 *.xml\~
 nbactions.xml
+nb-configuration.xml
 *.dsc
 *.tar.gz
 *.deb
